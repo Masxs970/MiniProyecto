@@ -21,5 +21,12 @@ namespace ProyectoTienda
         {
             this.Close();
         }
+
+        private void ViewCompras_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'sistema_tiendaDataSet1.sp_facturacion' Puede moverla o quitarla según sea necesario.
+            this.sp_facturacionTableAdapter.Fill(this.sistema_tiendaDataSet1.sp_facturacion);
+
+        }
     }
 }

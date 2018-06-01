@@ -34,5 +34,12 @@ namespace ProyectoTienda
         {
             this.Close();
         }
+
+        private void ViewClientes_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'sistema_tiendaDataSet1.cliente' Puede moverla o quitarla según sea necesario.
+            this.clienteTableAdapter.Fill(this.sistema_tiendaDataSet1.cliente);
+
+        }
     }
 }

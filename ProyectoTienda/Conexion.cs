@@ -19,7 +19,7 @@ namespace ProyectoTienda
 
         public Conexion()
         {
-            this.StringConnection = ("Data Source=DESKTOP-I3GP44S;Initial Catalog=sistema_tienda;Integrated Security=True");
+            this.StringConnection = ("Data Source=USUARIO-PC\\SQLEXPRESS;Initial Catalog=sistema_tienda;Integrated Security=True");
             this.conn = new SqlConnection(this.StringConnection);
         }
 
