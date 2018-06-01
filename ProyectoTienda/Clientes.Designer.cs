@@ -41,9 +41,6 @@
             this.SalirClientes = new System.Windows.Forms.Button();
             this.AtrasClientes = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sistema_tiendaDataSet1 = new ProyectoTienda.sistema_tiendaDataSet1();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clienteTableAdapter = new ProyectoTienda.sistema_tiendaDataSet1TableAdapters.clienteTableAdapter();
             this.idclienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,9 +48,12 @@
             this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sistema_tiendaDataSet1 = new ProyectoTienda.sistema_tiendaDataSet1();
+            this.clienteTableAdapter = new ProyectoTienda.sistema_tiendaDataSet1TableAdapters.clienteTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sistema_tiendaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistema_tiendaDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -163,24 +163,10 @@
             this.emailDataGridViewTextBoxColumn,
             this.telefonoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.clienteBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 35);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 107);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(382, 198);
             this.dataGridView1.TabIndex = 12;
-            // 
-            // sistema_tiendaDataSet1
-            // 
-            this.sistema_tiendaDataSet1.DataSetName = "sistema_tiendaDataSet1";
-            this.sistema_tiendaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "cliente";
-            this.clienteBindingSource.DataSource = this.sistema_tiendaDataSet1;
-            // 
-            // clienteTableAdapter
-            // 
-            this.clienteTableAdapter.ClearBeforeFill = true;
             // 
             // idclienteDataGridViewTextBoxColumn
             // 
@@ -225,6 +211,20 @@
             this.telefonoDataGridViewTextBoxColumn.HeaderText = "telefono";
             this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
             // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "cliente";
+            this.clienteBindingSource.DataSource = this.sistema_tiendaDataSet1;
+            // 
+            // sistema_tiendaDataSet1
+            // 
+            this.sistema_tiendaDataSet1.DataSetName = "sistema_tiendaDataSet1";
+            this.sistema_tiendaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clienteTableAdapter
+            // 
+            this.clienteTableAdapter.ClearBeforeFill = true;
+            // 
             // ViewClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -246,8 +246,8 @@
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.ViewClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sistema_tiendaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistema_tiendaDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
