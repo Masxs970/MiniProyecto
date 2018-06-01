@@ -163,7 +163,7 @@
             this.emailDataGridViewTextBoxColumn,
             this.telefonoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.clienteBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 107);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 26);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(382, 198);
             this.dataGridView1.TabIndex = 12;
